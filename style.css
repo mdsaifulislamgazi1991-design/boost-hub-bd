@@ -142,3 +142,27 @@ footer, p:last-child{
 .whatsapp-float:hover {
     background-color: #1ebe5d;
 }
+
+.navbar {
+    background: #ffffff;
+    padding: 10px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+.navbar a {
+    margin: 0 8px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    display: inline-block;
+    color: #1877f2;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    background: #1877f2;
+    color: white;
+}
