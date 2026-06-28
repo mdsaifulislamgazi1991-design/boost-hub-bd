@@ -1,11 +1,10 @@
-// =======================================
-// Boost Hub BD
-// JavaScript File
-// =======================================
+// ============================
+// Boost Hub BD - SCRIPT
+// ============================
 
-console.log("Boost Hub BD Loaded Successfully");
+console.log("Boost Hub BD Website Loaded 🚀");
 
-// WhatsApp Chat
+// WhatsApp Open
 function openWhatsApp() {
     window.open("https://wa.me/8801978196025", "_blank");
 }
@@ -15,18 +14,18 @@ function callNow() {
     window.location.href = "tel:+8801350913620";
 }
 
-// Copy Payment Number
+// Copy Number Function
 function copyNumber(number) {
     navigator.clipboard.writeText(number)
         .then(() => {
             alert("নম্বর কপি হয়েছে: " + number);
         })
         .catch(() => {
-            alert("নম্বর কপি করা যায়নি।");
+            alert("কপি করা যায়নি");
         });
 }
 
-// Coming Soon
-function comingSoon() {
-    alert("এই ফিচারটি খুব শীঘ্রই যুক্ত করা হবে।");
+// Simple Alert (future use)
+function showAlert(msg) {
+    alert(msg);
 }
