@@ -1,31 +1,27 @@
-// ============================
-// Boost Hub BD - SCRIPT
-// ============================
+document.addEventListener("DOMContentLoaded", function () {
 
-console.log("Boost Hub BD Website Loaded 🚀");
+  // Smooth scroll for internal links
+  const links = document.querySelectorAll("a[href^='#']");
 
-// WhatsApp Open
-function openWhatsApp() {
-    window.open("https://wa.me/8801978196025", "_blank");
-}
-
-// Call Now
-function callNow() {
-    window.location.href = "tel:+8801350913620";
-}
-
-// Copy Number Function
-function copyNumber(number) {
-    navigator.clipboard.writeText(number)
-        .then(() => {
-            alert("নম্বর কপি হয়েছে: " + number);
-        })
-        .catch(() => {
-            alert("কপি করা যায়নি");
+  links.forEach(link => {
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute("href"));
+      if (target) {
+        target.scrollIntoView({
+          behavior: "smooth"
         });
-}
+      }
+    });
+  });
 
-// Simple Alert (future use)
-function showAlert(msg) {
-    alert(msg);
-}
+  // Simple alert for contact click (optional UX)
+  const contactLinks = document.querySelectorAll("a[href^='tel:'], a[href^='https://wa.me']");
+
+  contactLinks.forEach(link => {
+    link.addEventListener("click", function () {
+      console.log("Contact clicked:", this.href);
+    });
+  });
+
+});
