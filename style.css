@@ -1,101 +1,118 @@
-body{
-    margin:0;
-    padding:0;
-    font-family:Arial, sans-serif;
-    background:#eef2f7;
-    color:#222;
-    line-height:1.6;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f7fb;
+    color: #333;
 }
 
-h1{
-    background: linear-gradient(90deg, #1877f2, #0f5ed7);
-    color:#fff;
-    text-align:center;
-    padding:20px;
-    margin:0;
+/* Header */
+header {
+    background: #0d47a1;
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
 
-.navbar {
-    background:#fff;
-    padding:10px;
-    text-align:center;
-    position:sticky;
-    top:0;
-    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+header h1 {
+    margin: 0;
 }
 
-.navbar a {
-    margin:5px;
-    padding:8px 12px;
-    display:inline-block;
-    color:#1877f2;
-    font-weight:bold;
-    text-decoration:none;
+/* Navigation */
+nav {
+    margin-top: 10px;
 }
 
-.navbar a:hover {
-    background:#1877f2;
-    color:white;
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
 }
 
-h2{
-    color:#1877f2;
-    margin:15px;
+nav a:hover {
+    text-decoration: underline;
 }
 
-p{
-    margin:15px;
+/* Section */
+section {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    margin-top: 20px;
+    border-radius: 10px;
 }
 
-ul{
-    background:#fff;
-    margin:15px;
-    padding:15px;
-    border-radius:10px;
+/* Headings */
+h2 {
+    color: #0d47a1;
 }
 
-button{
-    background:#1877f2;
-    color:#fff;
-    border:none;
-    padding:10px 15px;
-    margin:10px;
-    border-radius:6px;
+/* Buttons style (links) */
+a {
+    color: #0d47a1;
 }
 
-button:hover{
-    background:#0f5ed7;
+a:hover {
+    color: #1565c0;
 }
 
-.whatsapp-float{
-    position:fixed;
-    right:20px;
-    bottom:20px;
-    background:#25D366;
-    color:#fff;
-    width:55px;
-    height:55px;
-    border-radius:50%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-decoration:none;
-    font-size:24px;
+/* Card look for lists */
+ul {
+    padding-left: 20px;
 }
 
-hr{
-    border:none;
-    height:1px;
-    background:#ddd;
-    margin:20px 0;
+ul li {
+    margin-bottom: 8px;
 }
 
-@media(max-width:600px){
-    .navbar a{
-        display:block;
+/* Horizontal line */
+hr {
+    border: none;
+    height: 1px;
+    background: #ddd;
+    margin: 20px 0;
+}
+
+/* Footer */
+footer {
+    background: #0d47a1;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* Contact buttons look */
+a[href^="tel:"],
+a[href^="https://wa.me"] {
+    display: inline-block;
+    padding: 8px 12px;
+    background: #25d366;
+    color: white !important;
+    border-radius: 5px;
+    margin-top: 5px;
+    text-decoration: none;
+}
+
+a[href^="tel:"] {
+    background: #1e88e5;
+}
+
+a[href^="tel:"]:hover,
+a[href^="https://wa.me"]:hover {
+    opacity: 0.9;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    nav a {
+        display: block;
+        margin: 5px 0;
     }
 
-    button{
-        width:90%;
+    section {
+        margin: 10px;
     }
 }
